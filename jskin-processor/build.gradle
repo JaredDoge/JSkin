@@ -1,0 +1,22 @@
+apply plugin: 'java-library'
+
+//apply plugin: 'com.novoda.bintray-release'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':jskin-annotation')
+    implementation 'com.squareup:javapoet:1.11.1'
+    implementation 'com.google.auto.service:auto-service:1.0-rc6'
+}
+
+//publish {
+//    userOrg = 'jay07111995'
+//    groupId = 'com.insect.jskin'
+//    artifactId = 'jskin-processor'
+//    publishVersion = '1.0.0'
+//    desc = 'Android Skin Library Processor'
+//}
+
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"

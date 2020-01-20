@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/laughing" android:state_pressed="true" />
+    <item android:drawable="@drawable/thinking" android:state_pressed="false" />
+    <!--默认项-->
+    <item android:drawable="@drawable/thinking" />
+
+</selector>

@@ -1,0 +1,17 @@
+apply plugin: 'java-library'
+
+apply plugin: 'com.novoda.bintray-release'
+
+dependencies {
+    implementation 'androidx.annotation:annotation:1.1.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
+publish {
+    userOrg = 'jay07111995'
+    groupId = 'com.insect.jskin'
+    artifactId = 'jskin-annotation'
+    publishVersion = '1.0.1'
+    desc = 'Android Skin Library Annotation '
+}
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
